@@ -14,5 +14,6 @@ class onibus:
         pass
 
     def __str__(self):
-        return f"Ônibus (Placa: {self.placa}) Motorista: {self.nome_motorista}
+        return f"Ônibus (Placa: {self.placa}) Motorista: {self.nome_motorista}"
+        return f"Assentos totais: {self.assentos}"
                  
