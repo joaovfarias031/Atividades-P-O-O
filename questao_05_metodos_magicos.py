@@ -32,9 +32,9 @@ class onibus:
 
 
     def __str__(self):
-        txt = f"Ônibus (Placa: {self.placa}) Motorista: {self.nome_motorista}"
-        txt += f"Assentos totais: {len(self.assentos)}"
-        txt += f"Assentos ocupados: {self.assentos.count(True)}"
+        txt = f"Ônibus (Placa: {self.placa}) Motorista: {self.nome_motorista}-"
+        txt += f"Assentos totais: {len(self.assentos)}-"
+        txt += f"Assentos ocupados: {self.assentos.count(True)}-"
         txt += f"Assentos Livres: {self.assentos.count(False)}"
         return txt
 
