@@ -34,8 +34,8 @@ class onibus:
     def __str__(self):
         txt = f"Ônibus (Placa: {self.placa}) Motorista: {self.nome_motorista}"
         txt += f"Assentos totais: {len(self.assentos)}"
-        txt += f"Assentos ocupados: {len(self.assentos == True)}"
-        txt += f"Assentos Livres: {len(self.assentos == False)}"
+        txt += f"Assentos ocupados: {(self.assentos.count(True))}"
+        txt += f"Assentos Livres: {len(self.assentos.count(False))}"
         return txt
 
 onibus = onibus("ABC-1234", "João Silva", 10) # Ônibus com 10 assentos
