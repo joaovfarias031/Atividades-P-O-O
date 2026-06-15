@@ -20,10 +20,8 @@ class onibus:
     def __setitem__(self, indice, valor):
         if indice >= 0 or indice < len(self.assentos):
             if isinstance(valor, bool):
-                if self.assentos[indice] == False:
-                    return valor
-                elif self.assentos[indice] == True:
-                    return valor
+                self.assentos[indice] = valor
+                    
             else:
                 raise TypeError(f"Valor deve ser booleano (True/False)")
         else:
