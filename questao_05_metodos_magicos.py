@@ -5,7 +5,7 @@ class onibus:
         self.assentos = [False]*num_assentos
 
     def __len__(self):
-        return self.len(self.assentos)
+        return len(self.assentos)
 
     def __getitem__(self, indice):
         if indice >= 0 or indice < len(self.assentos):
