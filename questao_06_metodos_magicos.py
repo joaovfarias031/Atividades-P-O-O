@@ -30,7 +30,7 @@ class Mago(Personagem):
         return self.mana
 
     def __truediv__(Self, valor: float):
-        self.mana %= valor
+        self.mana /= valor
         return self.mana
 
     
@@ -71,7 +71,7 @@ class Barbaro(Personagem):
             return self.vida
 
     def __truediv__(self, valor: float):
-        self.stamina %= valor
+        self.stamina /= valor
         return self.stamina
 
 
