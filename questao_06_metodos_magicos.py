@@ -29,7 +29,7 @@ class Mago(Personagem):
         self.mana *= fator 
         return self.mana
 
-    def __truediv__(Self, valor: float):
+    def __truediv__(self, valor: float):
         self.mana /= valor
         return self.mana
 
