@@ -1,14 +1,15 @@
+import random
 class Personagem:
     def __init__(self, nome, vida):
         self.nome = nome
         self.vida = int(vida)
 
-    def tomar_dano(valor):
+    def tomar_dano(self, valor):
         self.vida -= valor
 
 class Mago(Personagem):
-    def __init__(self):
-        super.__init__(nome, vida)
+    def __init__(self,nome, vida):
+        super().__init__(nome, vida)
         self.mana = 10
 
     def __str__(self):
@@ -34,8 +35,8 @@ class Mago(Personagem):
 
     
 class Barbaro(Personagem):
-    def __init__(self):
-        super.__init__(nome, vida)
+    def __init__(self, nome, vida):
+        super().__init__(nome, vida)
         self.stamina = 10
         self.fúria = False
 
@@ -79,12 +80,13 @@ vida = input("Digite a vida do personagem: ")
 tipo  = input("Digite o tipo do personagem (Mago ou Bárbaro): ")
 if tipo == 'Mago':
     Pm = Mago(nome, vida)
-    While True:
+    while True:
         print("Escolha uma ação:")
         print("(1)Tomar poção simples")
         print("(2) Tomar poção especial")
         print("(3) ataque básico")
         print("(4) ataque especial")
+        print(Pm)
         escolha = input("Digite o número da ação: ")
         if escolha == "1":
             Pm + 5
@@ -96,18 +98,19 @@ if tipo == 'Mago':
             Pm / 2
         valor_dano = random.randint(1, 10)
         Pm.tomar_dano(valor_dano)
-        if Pm.self.vida == 0:
+        if Pm.vida == 0:
             break
         
 
 elif tipo == 'Barbaro':
     Pb = Barbaro(nome, vida)
-    While True:
+    while True:
         print("Escolha uma ação:")
         print("(1)Tomar poção simples")
         print("(2) Tomar poção especial")
         print("(3) ataque básico")
         print("(4) ataque especial")
+        print(Pb)
         
         escolha = input("Digite o número da ação: ")
         if escolha == "1":
@@ -120,7 +123,7 @@ elif tipo == 'Barbaro':
             Pb / 2
         valor_dano = random.randint(1, 10)
         Pb.tomar_dano(valor_dano)
-        if Pb.self.vida == 0:
+        if Pb.vida == 0:
             break
 
 
