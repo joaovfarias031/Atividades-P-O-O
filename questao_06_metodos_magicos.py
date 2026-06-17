@@ -98,7 +98,7 @@ if tipo == 'Mago':
             Pm / 2
         valor_dano = random.randint(1, 10)
         Pm.tomar_dano(valor_dano)
-        if Pm.vida == 0:
+        if Pm.vida <= 0:
             break
         
 
@@ -123,7 +123,7 @@ elif tipo == 'Barbaro':
             Pb / 2
         valor_dano = random.randint(1, 10)
         Pb.tomar_dano(valor_dano)
-        if Pb.vida == 0:
+        if Pb.vida <= 0:
             break
 
 
