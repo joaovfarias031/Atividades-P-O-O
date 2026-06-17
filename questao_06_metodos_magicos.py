@@ -38,7 +38,7 @@ class Barbaro(Personagem):
     def __init__(self, nome, vida):
         super().__init__(nome, vida)
         self.stamina = 10
-        self.fúria = False
+        self.furia = False
 
     def __str__(self):
         return f"nome: {self.nome}, vida: {self.vida}, stamina: {self.stamina}, fúria: {self.furia}"
