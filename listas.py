@@ -81,6 +81,30 @@ interseccao.sort()
 print(interseccao)
 
 #Questao_06
+rnd = []
+for i in range(20):
+    rnd.append(random.randint(0, 100))
+
+tam = int(input("Em quantos pedaços você quer dividir:"))
+sublistas = []
+for i in range(0,  len(rnd), tam):
+    sublistas.append(rnd[i:i+tam])
+
+print(rnd)
+print(sublistas)
+
+#Questao_07
+n = int(input("Digite o valor de n:"))
+matriz = []
+for i in range(n):
+    linha = [] 
+    for j in range(n):
+        linha.append(i)
+    matriz.append(linha)
+for linha in matriz:
+    print(linha)
+
+
 
 
 
