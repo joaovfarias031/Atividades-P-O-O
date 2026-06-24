@@ -15,4 +15,5 @@ print(resultado)
 
 #Questao_03
 def mesclar_dicionarios(dict_1, dict_2):
-    pass
+    resultado = dict_1 | dict_2 
+    
