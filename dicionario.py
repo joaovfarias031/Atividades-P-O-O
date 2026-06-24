@@ -12,3 +12,7 @@ def contagem_caracteres(frase):
 frase = "python programming"
 resultado = contagem_caracteres(frase)
 print(resultado)
+
+#Questao_03
+def mesclar_dicionarios(dict_1, dict_2):
+    
