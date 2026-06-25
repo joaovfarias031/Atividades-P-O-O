@@ -15,13 +15,13 @@ print(resultado)
 
 #Questao_02
 quant_palavras = {}
-with open('estomago.txt', 'r') as arquivo:
+with open('estomago.txt', 'r', encoding="utf-8") as arquivo:
     linha = arquivo.readline()
     for palavra in linha.split():
-        if palavra in contagem:
+        if palavra in quant_palavras:
             quant_palavras[palavra] += 1
         else:
-            quant_palavras[palavras] = 1
+            quant_palavras[palavra] = 1
 print(sorted(quant_palavras.values()))
 
 #Questao_03
