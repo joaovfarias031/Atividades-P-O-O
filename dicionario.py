@@ -22,7 +22,7 @@ with open('estomago.txt', 'r', encoding="utf-8") as arquivo:
             quant_palavras[palavra] += 1
         else:
             quant_palavras[palavra] = 1
-print(sorted(quant_palavras.values()))
+print(sorted(quant_palavras.keys()))
 
 #Questao_03
 def mesclar_dicionarios(dict_1, dict_2):
