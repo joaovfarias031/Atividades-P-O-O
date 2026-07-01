@@ -15,7 +15,7 @@ print(resultado)
 
 #Questao_02
 quant_palavras = {}
-with open('estomago.txt', 'r', encoding="utf-8") as arquivo:
+with open('revisao_aed/estomago.txt', 'r', encoding="utf-8") as arquivo:
     linha = arquivo.read()
     for palavra in linha.split():
         if palavra in quant_palavras:
